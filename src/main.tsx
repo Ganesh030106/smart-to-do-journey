@@ -6,10 +6,10 @@ import { ThemeProvider } from 'next-themes'
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider
     attribute="class"
-    defaultTheme="system"
-    enableSystem
-    themes={["light", "dark", "ocean", "forest", "sunset"]}
+    defaultTheme="dark"
+    forcedTheme="dark"
   >
     <App />
   </ThemeProvider>
+
 );

@@ -1,188 +1,176 @@
-# Smart Do Journey 🚀
+# 🚀 SmartDo Journey — Gamified Task Manager
 
-A modern, gamified todo application built with React, TypeScript, and Supabase. Transform your daily tasks into an engaging journey with XP, levels, streaks, and beautiful animations.
+Turn your daily tasks into an engaging adventure. SmartDo Journey is a modern, gamified to-do app with XP, levels, streaks, badges, analytics, and satisfying animations — all wrapped in a sleek dark UI.
+
+![Dark Theme](https://img.shields.io/badge/theme-dark-1a1a2e?style=for-the-badge)
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-Backend-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)
+
+---
 
 ## ✨ Features
 
-### 🎯 Core Functionality
-- **Task Management**: Create, edit, delete, and organize tasks with categories and priorities
-- **Smart Categories**: Personal, work, shopping, and custom categories
-- **Priority System**: High, medium, and low priority levels
-- **Date & Time**: Set start/end dates, times, and reminders
-- **Voice Input**: Speech-to-text task creation
-- **AI Suggestions**: Intelligent priority suggestions for tasks
+### 🎯 Task Management
+- Create, edit, delete, and organise tasks with categories & priorities
+- Quick-add with minimal friction — type and press Enter
+- Smart categories: Personal, Work, Shopping, Other
+- Priority levels: High, Medium, Low
+- Date, time, and reminder support
+- Voice input — speak your tasks into existence
 
-### 🎮 Gamification
-- **XP System**: Earn experience points for completing tasks
-- **Level Progression**: Level up as you complete more tasks
-- **Streak Tracking**: Maintain daily task completion streaks
-- **Badges & Achievements**: Unlock badges for milestones
-- **Confetti Celebrations**: Visual rewards for task completion
+### 🎮 Gamification Engine
+- **XP System** — earn experience points for every completed task
+- **Level Progression** — level up and unlock new milestones
+- **Daily Streaks** — maintain your productivity streak
+- **Badges & Achievements** — unlock 12+ badges (First Task, Streak Master, Centurion, and more)
+- **Confetti & Blast Effects** — satisfying visual celebrations on task completion
 
-### 🎨 User Experience
-- **Dark/Light Theme**: Toggle between themes
-- **Responsive Design**: Works seamlessly on desktop and mobile
-- **Animated Backgrounds**: Beautiful visual effects
-- **Blast Effects**: Satisfying animations for task completion
-- **Responsive Sidebar**: Easy navigation and task filtering
+### 📊 Analytics Dashboard
+- Area charts for task completion trends
+- Bar charts for weekly productivity breakdown
+- Pie charts for category distribution
+- Real-time stats: tasks today, pending, completion rate
+
+### 🌙 Dark Theme
+- Exclusive dark UI designed for focus and reduced eye strain
+- Carefully curated colour palette optimised for readability
+- Smooth animations and micro-interactions throughout
 
 ### 🔐 Authentication & Data
-- **Supabase Integration**: Secure user authentication and data storage
-- **Guest Mode**: Try the app without signing up
-- **Data Sync**: Tasks sync across devices for authenticated users
-- **Local Storage**: Offline support for guest users
+- **Supabase Auth** — secure email/password authentication
+- **Guest Mode** — try the app instantly without signing up
+- **Cloud Sync** — tasks sync across devices for logged-in users
+- **Local Storage** — offline support for guest users
+
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React 18** - Modern React with hooks
-- **TypeScript** - Type-safe development
-- **Vite** - Fast build tool and dev server
-- **React Router** - Client-side routing
-- **React Query** - Server state management
+| Layer | Technologies |
+|-------|-------------|
+| **Frontend** | React 18, TypeScript, Vite, React Router |
+| **State** | React Query (TanStack Query), React Context |
+| **UI** | Tailwind CSS, shadcn/ui, Radix UI, Lucide Icons |
+| **Charts** | Recharts |
+| **Backend** | Supabase (Auth, PostgreSQL, Edge Functions) |
+| **Tooling** | ESLint, PostCSS, TypeScript ESLint |
 
-### UI & Styling
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Beautiful, accessible UI components
-- **Radix UI** - Headless UI primitives
-- **Lucide React** - Beautiful icons
-- **Framer Motion** - Smooth animations
-
-### Backend & Database
-- **Supabase** - Open-source Firebase alternative
-- **PostgreSQL** - Reliable database
-- **Row Level Security** - Secure data access
-
-### Development Tools
-- **ESLint** - Code quality and consistency
-- **PostCSS** - CSS processing
-- **TypeScript ESLint** - TypeScript-specific linting
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-- **Node.js** 18+ and npm
-- **Git** for version control
+- **Node.js** 18+ and **npm**
+- **Git**
 
 ### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd smart-do-journey1
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Set up environment variables**
-   Create a `.env.local` file in the root directory:
-   ```env
-   VITE_SUPABASE_URL=your_supabase_url
-   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-   ```
-
-4. **Start the development server**
-   ```bash
-   npm run dev
-   ```
-
-
-## 📱 Available Scripts
-
-- **`npm run dev`** - Start development server
-- **`npm run build`** - Build for production
-- **`npm run build:dev`** - Build for development
-- **`npm run preview`** - Preview production build
-- **`npm run lint`** - Run ESLint
-
-## 🏗️ Project Structure
-
-```
-src/
-├── components/          # Reusable UI components
-│   ├── ui/             # shadcn/ui components
-│   ├── TodoApp.tsx     # Main todo application
-│   ├── AuthButtons.tsx # Authentication components
-│   └── ...             # Other components
-├── contexts/            # React contexts
-│   └── AuthContext.tsx # Authentication state
-├── hooks/               # Custom React hooks
-├── integrations/        # External service integrations
-│   └── supabase/       # Supabase client and functions
-├── lib/                 # Utility functions
-├── pages/               # Application pages
-├── types/               # TypeScript type definitions
-└── main.tsx            # Application entry point
-```
-
-## 🔧 Configuration
-
-### Supabase Setup
-1. Create a new project at [supabase.com](https://supabase.com)
-2. Get your project URL and anon key
-3. Add them to your `.env.local` file
-4. Set up the database schema (see `supabase/` directory)
-
-### Tailwind CSS
-The project uses Tailwind CSS with custom configuration. See `tailwind.config.ts` for theme customization.
-
-## 🎨 Customization
-
-### Themes
-- Modify `src/components/ThemeSwitcher.tsx` for custom themes
-- Update `tailwind.config.ts` for color schemes
-
-### Components
-- All UI components are in `src/components/ui/`
-- Based on shadcn/ui for easy customization
-- Use Radix UI primitives for accessibility
-
-### Styling
-- Tailwind CSS classes for styling
-- CSS variables for theme colors
-- Custom animations in `src/components/AnimatedBackground.tsx`
-
-## 🚀 Deployment
-
-### Build for Production
 ```bash
-npm run build
+# Clone the repository
+git clone https://github.com/Ganesh030106/smart-to-do-journey.git
+cd smart-to-do-journey
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+# Create a .env file in the root directory:
+cp .env.example .env   # then edit with your keys
 ```
 
-### Deploy to Vercel/Netlify
-1. Connect your repository
-2. Set environment variables
-3. Deploy automatically on push
+Add the following to your `.env`:
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-### Supabase Functions
-The project includes Supabase Edge Functions for AI priority suggestions:
 ```bash
-supabase functions deploy ai-priority-suggestion
+# Start development server
+npm run dev
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
-## 🙏 Acknowledgments
-
-- **shadcn/ui** for beautiful UI components
-- **Supabase** for backend services
-- **Tailwind CSS** for styling utilities
-- **React community** for amazing libraries
-
+The app will be available at `http://localhost:8080`.
 
 ---
 
-**Happy tasking! 🎉**
+## 📁 Project Structure
+
+```
+src/
+├── components/           # UI components
+│   ├── ui/              # shadcn/ui primitives
+│   ├── TodoApp.tsx      # Main app (tasks, analytics, badges)
+│   ├── AuthButtons.tsx  # Login/Signup buttons
+│   ├── BlastEffect.tsx  # Task completion animation
+│   ├── AnimatedBackground.tsx
+│   └── ...
+├── contexts/
+│   └── AuthContext.tsx   # Auth state management
+├── hooks/                # Custom React hooks
+├── integrations/
+│   └── supabase/        # Supabase client, queries, types
+├── pages/
+│   ├── Welcome.tsx      # Landing page
+│   ├── Index.tsx        # Dashboard route
+│   └── NotFound.tsx     # 404 page
+├── types/
+│   └── task.ts          # Task type definitions
+├── index.css            # Design system & animations
+└── main.tsx             # App entry point
+```
+
+---
+
+## 📱 Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start dev server with HMR |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint checks |
+
+---
+
+## 🔧 Supabase Setup
+
+1. Create a project at [supabase.com](https://supabase.com)
+2. Copy your **Project URL** and **Anon Key**
+3. Add them to `.env`
+4. Run the migration in `supabase/migrations/` to create the tasks table
+5. (Optional) Deploy the AI priority suggestion Edge Function:
+   ```bash
+   supabase functions deploy ai-priority-suggestion
+   ```
+
+---
+
+## 🚀 Deployment
+
+### Vercel / Netlify
+1. Connect your GitHub repository
+2. Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as environment variables
+3. Build command: `npm run build`
+4. Output directory: `dist`
+
+A `public/_redirects` file is included for Netlify SPA routing.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙏 Acknowledgements
+
+- [shadcn/ui](https://ui.shadcn.com/) — Beautiful, accessible components
+- [Supabase](https://supabase.com/) — Open-source backend
+- [Recharts](https://recharts.org/) — Composable chart library
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
+- [Lucide](https://lucide.dev/) — Beautiful open-source icons
+
+---
+

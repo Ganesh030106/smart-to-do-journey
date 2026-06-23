@@ -11,7 +11,6 @@ import {
 } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
 import AuthButtons from "@/components/AuthButtons";
 import SettingsMenu, { type AppSettings } from "@/components/SettingsMenu";
 import AnimatedBackground from "@/components/AnimatedBackground";
@@ -778,8 +777,8 @@ const TodoApp = () => {
           </div>
           <div className="flex items-center gap-2">
             <SettingsMenu onChange={setSettings} />
-            <ThemeSwitcher />
             <AuthButtons />
+
           </div>
         </div>
 

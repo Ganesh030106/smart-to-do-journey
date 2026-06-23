@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Star, Zap, Target, Users, Shield } from 'lucide-react';
 import AnimatedBackground from "@/components/AnimatedBackground";
-import ThemeSwitcher from "@/components/ThemeSwitcher";
+
 import { useAuth } from '@/contexts/AuthContext';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -115,7 +115,6 @@ const Welcome: React.FC = () => {
             SmartDo Journey
           </h1>
         </div>
-        <ThemeSwitcher />
       </header>
 
       {/* Main Content */}

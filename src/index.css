@@ -6,85 +6,7 @@
 
 @layer base {
   :root {
-    /* Main Background & Text */
-    --background: 220 20% 98%;
-    --foreground: 240 10% 15%;
-
-    /* Card & Surface Colors */
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 15%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
-
-    /* Primary - Soft Mint Green */
-    --primary: 160 60% 65%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 160 60% 80%;
-
-    /* Secondary - Soft Lavender */
-    --secondary: 270 50% 85%;
-    --secondary-foreground: 270 20% 30%;
-
-    /* Muted - Cream */
-    --muted: 45 30% 95%;
-    --muted-foreground: 240 10% 50%;
-
-    /* Accent - Soft Peach */
-    --accent: 25 80% 85%;
-    --accent-foreground: 25 30% 25%;
-
-    /* Gamification Colors */
-    --success: 140 50% 70%;
-    --success-foreground: 0 0% 100%;
-    --warning: 45 90% 75%;
-    --warning-foreground: 45 30% 25%;
-    --destructive: 0 70% 75%;
-    --destructive-foreground: 0 0% 100%;
-
-    /* Priority Colors */
-    --priority-high: 0 70% 75%;
-    --priority-medium: 35 85% 75%;
-    --priority-low: 140 50% 75%;
-
-    /* Category Colors */
-    --category-work: 210 60% 75%;
-    --category-personal: 320 60% 80%;
-    --category-shopping: 270 50% 80%;
-    --category-other: 260 20% 50%;
-
-    /* XP & Progress */
-    --xp-bar: 60 80% 70%;
-    --xp-background: 60 20% 90%;
-
-    /* Borders & Inputs */
-    --border: 220 15% 90%;
-    --input: 220 15% 95%;
-    --ring: 160 60% 65%;
-
-    /* Animation Variables */
-    --bounce-spring: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --smooth-ease: cubic-bezier(0.4, 0, 0.2, 1);
-    --radius: 0.75rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
+    /* Dark Theme - Primary */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
 
@@ -96,6 +18,7 @@
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-glow: 210 40% 80%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -106,12 +29,39 @@
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
 
+    /* Gamification Colors */
+    --success: 140 50% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 90% 55%;
+    --warning-foreground: 45 30% 15%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
+    /* Priority Colors */
+    --priority-high: 0 70% 55%;
+    --priority-medium: 35 85% 55%;
+    --priority-low: 140 50% 55%;
+
+    /* Category Colors */
+    --category-work: 210 60% 55%;
+    --category-personal: 320 60% 60%;
+    --category-shopping: 270 50% 60%;
+    --category-other: 260 20% 50%;
+
+    /* XP & Progress */
+    --xp-bar: 60 80% 55%;
+    --xp-background: 217.2 32.6% 17.5%;
+
+    /* Borders & Inputs */
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    /* Animation Variables */
+    --bounce-spring: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --smooth-ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --radius: 0.75rem;
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -121,74 +71,8 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
-
-  /* Additional named themes (class-based via next-themes) */
-  .ocean {
-    --background: 205 80% 96%;
-    --foreground: 210 25% 20%;
-    --card: 0 0% 100%;
-    --card-foreground: 210 25% 20%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 210 25% 20%;
-    --primary: 200 90% 45%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 190 60% 80%;
-    --secondary-foreground: 200 40% 20%;
-    --muted: 200 40% 92%;
-    --muted-foreground: 210 20% 45%;
-    --accent: 185 70% 80%;
-    --accent-foreground: 190 40% 20%;
-    --destructive: 0 70% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 200 30% 85%;
-    --input: 200 30% 92%;
-    --ring: 200 90% 45%;
-  }
-
-  .forest {
-    --background: 140 30% 96%;
-    --foreground: 140 25% 15%;
-    --card: 0 0% 100%;
-    --card-foreground: 140 25% 15%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 140 25% 15%;
-    --primary: 145 45% 35%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 100 30% 85%;
-    --secondary-foreground: 140 25% 20%;
-    --muted: 120 20% 92%;
-    --muted-foreground: 140 10% 35%;
-    --accent: 35 85% 70%;
-    --accent-foreground: 30 40% 20%;
-    --destructive: 0 70% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 120 20% 85%;
-    --input: 120 20% 92%;
-    --ring: 145 45% 35%;
-  }
-
-  .sunset {
-    --background: 20 70% 97%;
-    --foreground: 15 30% 20%;
-    --card: 0 0% 100%;
-    --card-foreground: 15 30% 20%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 15 30% 20%;
-    --primary: 15 85% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 330 70% 85%;
-    --secondary-foreground: 330 30% 25%;
-    --muted: 20 40% 92%;
-    --muted-foreground: 15 25% 40%;
-    --accent: 45 90% 70%;
-    --accent-foreground: 45 30% 25%;
-    --destructive: 0 70% 60%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 20 30% 85%;
-    --input: 20 30% 92%;
-    --ring: 15 85% 55%;
-  }
 }
+
 
 @layer base {
   * {
